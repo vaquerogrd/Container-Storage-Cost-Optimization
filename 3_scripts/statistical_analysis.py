@@ -17,6 +17,13 @@ summary_stats = data[['storage_duration', 'buyingStorage', 'sellingStorage']].de
 print(summary_stats)
 
 # ________________________________________________________ 3. Regression Analysis
+# Filter out rows with NaN or infinite values in 'storage_duration' or 'buyingStorage'
+data = data[(~data['storage_duration'].isna()) & (~data['buyingStorage'].isna())]
+
+# Ensure there are no infinite values
+data = data[(~data['storage_duration'].isin([float('inf'), float('-inf')])) & 
+            (~data['buyingStorage'].isin([float('inf'), float('-inf')]))]
+
 # Define dependent and independent variables
 X = data['storage_duration']  # Independent variable
 y = data['buyingStorage']     # Dependent variable
