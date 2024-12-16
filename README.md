@@ -73,6 +73,7 @@ Collaboration with data scientists, access to larger datasets, and domain-specif
 
 * This project was inspired by operational challenges at Medlog Austria.
 * Developed as part of the Helsinki University Building AI course project.
-* Placeholder image: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+* Placeholder image:
+* [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
 
 
