@@ -52,8 +52,8 @@ A yard manager can use the AI model to estimate costs during peak operational pe
 - **Dynamic Optimization**: Insights to improve space utilization and reduce costs.  
 - **User-friendly Visualization**: Trends and predictions presented for actionable decision-making.  
 
-📊 *Placeholder for project interface or visualization:*  
-![Visualization Placeholder]([https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg](https://mydocs.msc.com/:i:/g/personal/e_vaquero_medlog_com/EcKkjxozy0ZKq2kbQDsWsm4B6oLe8nBqrtC8O9ihCgIuKQ?e=SSIL01))
+📊 *Placeholder:*  
+![Visualization Placeholder](4_images/port5_good.webp)
 
 ---
 
