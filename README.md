@@ -7,7 +7,7 @@ Copy the template, paste it to your GitHub README and edit! -->
 
 ---
 
-## **Summary**
+## Summary
 
 The *Container Storage Cost Optimization* project leverages machine learning to predict storage costs for containers in logistics yards. This tool aids logistics companies in optimizing cost planning, improving yard efficiency, and enhancing customer satisfaction. Developed as part of the *Building AI* course project, the solution provides actionable insights to reduce operational costs and streamline container management.
 
