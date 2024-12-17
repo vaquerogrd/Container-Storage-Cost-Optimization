@@ -2,10 +2,8 @@
 created by Reaktor Innovations and University of Helsinki. 
 Copy the template, paste it to your GitHub README and edit! -->
 
-# **Container Storage Cost Optimization**  
+# Project Title
 **Project developed for the Building AI course by Reaktor Innovations and the University of Helsinki**
-
----
 
 ## Summary
 
