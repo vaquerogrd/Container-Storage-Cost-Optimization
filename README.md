@@ -2,78 +2,109 @@
 created by Reaktor Innovations and University of Helsinki. 
 Copy the template, paste it to your GitHub README and edit! -->
 
-# Container Storage Cost Optimization
+# **Container Storage Cost Optimization**  
+**Project developed for the Building AI course by Reaktor Innovations and the University of Helsinki**
 
-Building AI course project
+---
 
-## Summary
+## **Summary**
 
-This project focuses on predicting storage costs for containers in logistics yards using machine learning techniques. It helps logistics companies optimize cost planning, enhance yard efficiency, and improve customer satisfaction. Developed as part of the Building AI course project.
+The *Container Storage Cost Optimization* project leverages machine learning to predict storage costs for containers in logistics yards. This tool aids logistics companies in optimizing cost planning, improving yard efficiency, and enhancing customer satisfaction. Developed as part of the *Building AI* course project, the solution provides actionable insights to reduce operational costs and streamline container management.
 
-## Background
+---
 
-Storage costs in container yards are influenced by unpredictable durations, inefficient space utilization, and unclear cost structures. Logistics companies like Medlog Austria face significant challenges in managing these costs, resulting in:
-* Increased operational expenses.
-* Limited transparency for clients.
-* Suboptimal resource allocation.
+## **Background**
 
-This project aims to address these issues by leveraging AI to predict costs accurately and recommend storage optimizations, providing financial and operational benefits to logistics companies.
+Efficient container storage management is critical for logistics companies like **Medlog Austria**, where storage costs can escalate due to:  
+- Unpredictable container durations.  
+- Inefficient space utilization.  
+- Unclear cost structures.  
 
-## How is it used?
+These challenges result in:  
+✅ Increased operational expenses.  
+✅ Limited transparency for clients.  
+✅ Suboptimal resource allocation.  
 
-The solution is integrated into the existing yard management systems. It takes in key inputs such as:
-* Arrival and departure dates.
-* Container size and type.
-* Yard utilization metrics.
+**Objective**:  
+The project uses **AI-driven predictions** to accurately estimate storage costs and recommend optimization strategies, leading to significant **financial and operational benefits**.
 
-The AI model outputs:
-* Predicted storage costs for each container.
-* Recommendations to optimize space allocation.
+---
 
-For example, a yard manager can use the predictions to plan container movements and estimate costs during peak operational periods.
+## **How is it Used?**
 
-Here’s a placeholder for your project interface or visualization:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+The solution integrates seamlessly with existing **Yard Management Systems** (YMS) and requires the following key inputs:  
+- **Arrival and departure dates** of containers.  
+- **Container size and type** (e.g., 20ft, 40ft, dry, reefer).  
+- **Storage metrics** like utilization rates.  
 
-## Data sources and AI methods
+### **Outputs**:  
+- Predicted **storage costs** per container.  
+- **Recommendations** for space allocation optimization.
 
-### Data Sources:
-* Historical container movement logs.
-* Yard space utilization metrics.
-* Costing data (e.g., daily rates, penalties).
+**Example Use Case**:  
+A yard manager can use the AI model to estimate costs during peak operational periods and plan container movements to avoid congestion.
 
-### AI Methods:
-* **Regression Analysis**: To predict storage durations and costs.
-* **Clustering**: To identify storage patterns and optimize yard usage.
-* **Visualization Tools**: To present predictions in a user-friendly manner.
+---
 
-| AI Technique        | Purpose                                |
-|---------------------|----------------------------------------|
-| Regression Analysis | Predicting durations and costs         |
-| Clustering          | Identifying container movement trends  |
-| Data Visualization  | Presenting actionable insights         |
+## **Key Features and Interface**
 
-## Challenges
+- **Accurate Cost Predictions**: Based on historical and current container data.  
+- **Dynamic Optimization**: Insights to improve space utilization and reduce costs.  
+- **User-friendly Visualization**: Trends and predictions presented for actionable decision-making.  
 
-While this project predicts storage costs effectively, it has certain limitations:
-* It may not account for real-time disruptions (e.g., congestion, delays).
-* It relies heavily on historical data, which may not always represent future scenarios accurately.
-* Ethical considerations include ensuring fair cost predictions and avoiding bias in AI models.
+📊 *Placeholder for project interface or visualization:*  
+![Visualization Placeholder](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
 
-## What next?
+---
 
-Future enhancements for the project include:
-1. Real-time data integration for dynamic cost updates.
-2. Expansion to optimize costs across multiple ports and yard systems.
-3. Automating container allocation strategies to minimize storage costs further.
+## **Data Sources and AI Methods**
 
-Collaboration with data scientists, access to larger datasets, and domain-specific expertise will be critical for further development.
+### **Data Sources**  
+- Historical container movement logs (arrival/departure).  
+- Yard utilization metrics.  
+- Cost data, including storage rates and penalties.
 
-## Acknowledgments
+### **AI Methods Used**  
 
-* This project was inspired by operational challenges at Medlog Austria.
-* Developed as part of the Helsinki University Building AI course project.
-* Placeholder image:
-* [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+| **AI Technique**       | **Purpose**                         |  
+|-------------------------|-------------------------------------|  
+| **Regression Analysis** | Predict storage durations and costs |  
+| **Clustering**          | Identify patterns in storage usage |  
+| **Visualization Tools** | Present predictions and insights    |
+
+---
+
+## **Challenges**
+
+Despite the project's effectiveness, the following limitations exist:  
+- **Real-time disruptions**: The model does not yet account for unexpected events like congestion or delays.  
+- **Reliance on historical data**: Accuracy may be reduced if historical data does not reflect future trends.  
+- **Ethical considerations**: Ensuring unbiased and fair cost predictions across different operational scenarios.
+
+---
+
+## **Future Enhancements**
+
+Planned improvements include:  
+1. **Real-time data integration** for dynamic cost updates.  
+2. **Scalability** to optimize costs across multiple yards and ports.  
+3. **Automated container allocation** to further reduce storage costs and improve efficiency.
+
+Collaboration with logistics experts and access to larger, real-time datasets will be key to achieving these goals.
+
+---
+
+## **Getting Started**
+
+### **Dependencies**  
+- Python 3.x  
+- Required libraries: `pandas`, `scikit-learn`, `matplotlib`, `plotly`, `statsmodels`  
+
+### **Installation**  
+Clone this repository and install dependencies using pip:  
+```bash
+git clone https://github.com/vaquerogrd/Container-Storage-Cost-Optimization.git  
+cd Container-Storage-Cost-Optimization  
+pip install -r requirements.txt  
 
 
