@@ -10,7 +10,8 @@ y_train = pd.read_csv('1_data/y_train.csv')
 y_test = pd.read_csv('1_data/y_test.csv')
 
 # Drop non-numerical columns and irrelevant features
-non_numerical_columns = ['type', 'number', 'booking', 'contSuttleRef', 'terminal', 
+##non_numerical_columns = ['type', 'number', 'booking', 'contSuttleRef', 'terminal', 
+non_numerical_columns = ['type', 'contSuttleRef', 'terminal', 
                          'provider', 'gate_in', 'gate_out', 'cost', 'stoComment', 
                          'Created', 'container_category']
 X_train = X_train.drop(columns=non_numerical_columns, errors='ignore')

@@ -12,8 +12,7 @@ columns_to_drop = ['emptyRelease', 'datePOL', 'deliveryRef', 'confirmedAPP',
 data = data.drop(columns=columns_to_drop, errors='ignore')
 
 # Filter rows where essential fields are not empty
-data = data[data['storageID'].notna() & data['booking'].notna() & data['number'].notna()
-            & data['dateTerminal'].notna() & data['dateDeparture'].notna()]
+data = data[data['storageID'].notna() & data['dateTerminal'].notna() & data['dateDeparture'].notna()]
 
 # Format date columns
 data['dateTerminal'] = pd.to_datetime(data['dateTerminal'], format='%d.%m.%Y', errors='coerce')
@@ -29,7 +28,7 @@ filtered_data = data[data['days_diff'] > 300]
 # Print the results
 if not filtered_data.empty:
     print("Rows where days_diff > 1000:")
-    print(filtered_data[['number', 'booking', 'days_diff']])
+    print(filtered_data[['ID', 'days_diff']])
 else:
     print("No rows found where days_diff > 1000.")
 

@@ -12,7 +12,8 @@ data = pd.read_excel(file_path)
 data = data.drop(columns=columns_to_drop, errors='ignore')
 
 # ________________________________________________________FILTER ROWS WHERE storageID IS NOT EMPTY
-data = data[data['storageID'].notna() & data['booking'].notna() & data['number'].notna()
+##data = data[data['storageID'].notna() & data['booking'].notna() & data['number'].notna()
+data = data[data['storageID'].notna()
           & data['dateTerminal'].notna() & data['dateDeparture'].notna()]
 
 # ________________________________________________________FORTMAT COLUMNS
@@ -24,9 +25,9 @@ data['Created'] = pd.to_datetime(data['Created'], errors='coerce')
 data['size'] = data['size'].fillna(0).astype(int)
 data['buyingStorage'] = data['buyingStorage'].fillna(0.0).astype(float)
 data['sellingStorage'] = data['sellingStorage'].fillna(0.0).astype(float)
-data['booking'] = data['booking'].fillna('Unknown').astype(str)
+##data['booking'] = data['booking'].fillna('Unknown').astype(str)
 data['type'] = data['type'].fillna('Unknown').astype(str)
-data['number'] = data['number'].fillna('Unknown').astype(str)
+##data['number'] = data['number'].fillna('Unknown').astype(str)
 data['terminal'] = data['terminal'].fillna('Unknown').astype(str)
 data['provider'] = data['provider'].fillna('Unknown').astype(str)
 
@@ -129,7 +130,7 @@ data['gate_out_weekend_or_holiday'] = data['gate_out'].apply(is_weekend_or_holid
 print(data[['gate_in', 'gate_in_weekend_or_holiday', 'gate_out', 'gate_out_weekend_or_holiday']].head())
 
 #_________________________________________________________FILTER RELEVANT COLUMNS
-relevant_data = filtered_data[['number', 'size', 'type', 
+relevant_data = filtered_data[['size', 'type', 
                       'gate_in', 'gate_out', 'storage_duration',
                       'buyingStorage','sellingStorage']]
 
