@@ -5,8 +5,7 @@ from datetime import datetime
 file_path = '1_data/container_data_2024.xlsx'
 data = pd.read_excel(file_path)
 columns_to_drop = ['emptyRelease', 'datePOL', 'deliveryRef', 'confirmedAPP',
-                   'appConfirmation', 'Created By', 'Modified', 'Modified By',
-                   'contAviso', 'Item Type']
+                   'appConfirmation', 'Modified', 'contAviso', 'Item Type']
 
 data = pd.read_excel(file_path)
 data = data.drop(columns=columns_to_drop, errors='ignore')

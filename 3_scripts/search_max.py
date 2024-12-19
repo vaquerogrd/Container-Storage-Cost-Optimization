@@ -7,8 +7,7 @@ data = pd.read_excel(file_path)
 
 # Columns to drop
 columns_to_drop = ['emptyRelease', 'datePOL', 'deliveryRef', 'confirmedAPP',
-                   'appConfirmation', 'Created By', 'Modified', 'Modified By',
-                   'contAviso', 'Item Type']
+                   'appConfirmation', 'Modified', 'contAviso', 'Item Type']
 data = data.drop(columns=columns_to_drop, errors='ignore')
 
 # Filter rows where essential fields are not empty
